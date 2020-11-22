@@ -9,7 +9,7 @@
 Food and Drink Invitation to the customers living within 100 km from Dublin Office.
 
 ## Supported Functionalities
-- User can view the list of all the customers living within 100 km from the Dublin Office.
+- User can view the list of all the customers living within 100 km from the Dublin Office. `http://localhost:8080`
 - The user can provide the distance value in the URL to filter out the customers.
   For example, to find the list of customer within 40 km, we can use URL as `http://localhost:8080/customers/40`
 
