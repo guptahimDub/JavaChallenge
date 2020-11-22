@@ -1,7 +1,7 @@
 # JavaChallenge
 
 ### This repository consists of below 2 files:
-- `JavaChallenge` - Consists of two folders representing server-side code (server folder) and client-side code (client folder).
+- `JavaChallenge` - Consists of src folder and customer.txt file.
 - `Readme` file - All the application details with instructions are included in this file.
 
 ## Web Application to display sorted list of customers with 100 km from Dublin Office
