@@ -3,6 +3,7 @@
 ### This repository consists of below 2 files:
 - `JavaChallenge` - Consists of src folder and customer.txt file.
 - `Readme` file - All the application details with instructions are included in this file.
+- `customersListWithin100Kms` - Output file: consisting of sorted list of customers lie within 100 Km.
 
 ## Web Application to display sorted list of customers with 100 km from Dublin Office
 Food and Drink Invitation to the customers living within 100 km from Dublin Office.
