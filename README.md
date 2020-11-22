@@ -28,18 +28,18 @@ Food and Drink Invitation to the customers living within 100 km from Dublin Offi
 
 ## Installation Steps
 1. Clone the Git Repository.
-2. `JavaChallenge` consists of two folders i.e. server (server-side code) and client (client-side code).
+2. `JavaChallenge` consists of src folder.
 3. Build the project using Maven.
 
 ## Build Projects
 
 1. Using below command
 
-`mvn clean install` - under JavaProject/server
+`mvn clean install` - under /JavaChallenge
 
 2. Run below command to deploy the project on embedded Tomcat server
 
-`mvn spring-boot:run` - under JavaProject/client
+`mvn spring-boot:run` - under /JavaChallenge
 
 ## Usage
 Once embedded server is started use below links to access the list of customers:
