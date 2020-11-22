@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IntercomTest</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+	<link rel = "icon" href =  
+"favicon.ico" 
+        type = "image/x-icon"> 
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/app/app.css"/>
+</head>
+<body ng-app="app">
+
+<div class="container-fluid" ng-controller="CustomerController as vm">
+    <div class="row">
+        <div class="jumbotron">
+            <div class="container-fluid">
+                <h1>Food & Drinks Invitation</h1>
+ 
+                <p><a href="" ng-click="vm.getCustomersWithinDistance()" class="btn btn-success btn-lg">Customer's within 100 km from Dublin Office</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-if="customers">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>S.No</th>
+                            <th>Customer Name</th>
+                            <th ng-if="customers[0].latitude">Latitude</th>
+                            <th ng-if="customers[0].longitude">Longitude</th>
+                            <th ng-if="customers[0].distance">Distance (Km)</th>
+                        </tr>
+                        </thead>
+                        <tbody ng-repeat="c in customers">
+                        <tr>
+                            <td>{{c.user_id}}</td>
+                            <td>{{c.name}}</td>
+                            <td ng-if="c.latitude">{{c.latitude}}</td>
+                            <td ng-if="c.longitude">{{c.latitude}}</td>
+                            <td ng-if="c.distance">{{c.distance | number : 3}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/app/app.js"></script>
+<script src="js/app/customer/CustomerService.js"></script>
+<script src="js/app/customer/CustomerController.js"></script>
+
+
+</html>
