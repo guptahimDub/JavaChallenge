@@ -55,9 +55,11 @@ Once embedded server is started use below links to access the list of customers:
 ![Picture1](https://user-images.githubusercontent.com/56262858/99890492-d5762a00-2c57-11eb-8158-ef818a14e1d0.PNG)
 
 
-2. Click on the button to view the list of cutsomers within 100 km.
+2. Click on the button to view the sorted list of cutsomers within 100 km.
+
 ![Picture2](https://user-images.githubusercontent.com/56262858/99890494-db6c0b00-2c57-11eb-889c-6faf9cd13186.PNG)
 
 
-3. Customers within 40 km using `http://localhost:8080/customers/40`
+3. Sorted Customers within 40 km using `http://localhost:8080/customers/40`
+
 ![picture3](https://user-images.githubusercontent.com/56262858/99890497-e1fa8280-2c57-11eb-9993-28f7c1ee9fcf.PNG)
